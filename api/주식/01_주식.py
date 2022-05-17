@@ -36,7 +36,7 @@ def get_trending_stocks():
 def visualize_trending_stocks(stocks):
   # 데이터를 시간화 하는 로직
   stocks_df = pd.DataFrame(stocks)
-  stocks_df.to_html("api/tmp.html")
+  stocks_df.to_html("api/주식/tmp.html")
   
 trending_stock = get_trending_stocks()
 visualize_trending_stocks(trending_stock)
